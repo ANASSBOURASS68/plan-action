@@ -1,0 +1,134 @@
+body {
+    background-color: #ecf2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    width: 600px;
+    min-height: 400px;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+}
+.result{
+    background-color: rgb(5, 131, 241);
+    width: 50%;
+    border-radius: 30px;
+    padding: 7px;
+    text-align: center;
+    color: #ecf2ff;
+}
+.score {
+    background-color: rgb(29, 122, 193);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.score h1{
+    font-size: 50px;
+}
+
+
+.summary{
+    background-color: whitesmoke;
+    width: 50%;
+    border-radius: 30px;
+    padding: 7px;
+    text-align: start;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.summary h2 {
+    text-align: center;
+}
+.reaction,.memory,.verbal,.visual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reaction{
+    background-color: rgb(215, 147, 58);
+    border-radius: 15px;
+    padding: 5px;
+    height: 20px;
+
+}
+
+.memory{
+    background-color: rgb(58, 215, 110);
+    border-radius: 15px;
+    padding: 5px;
+    height: 20px;
+}
+
+.verbal{
+    background-color: rgb(173, 219, 23);
+    border-radius: 15px;
+    padding: 5px;
+    height: 20px;
+}
+.visual{
+    background-color: rgb(240, 73, 204);
+    border-radius: 15px;
+    padding: 5px;
+    height: 20px;
+}
+
+button{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    font-size: larger;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+        height: auto;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+        min-height: auto;
+        flex-direction: column;
+    }
+
+    .result,
+    .summary {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .result {
+        border-radius: 25px 25px 0 0;
+    }
+
+    .summary {
+        gap: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
