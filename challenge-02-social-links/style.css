@@ -1,0 +1,38 @@
+body {
+    background-color: #d5e1ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image img{
+    height: 100px;
+    width: auto;
+}
+.social-links img{
+    height: 20px;
+    width: 20px;
+    
+}
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    gap:23px ;
+}
+.content{
+    text-align: center;
+}
+h1{
+    color: blueviolet;
+}
+p{
+    color: gray;
+}
